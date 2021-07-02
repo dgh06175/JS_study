@@ -78,6 +78,60 @@
 // console.log(myTitle.id); // title
 // console.log(myTitle.className); // Hello
 
-const hellos = document.getElementsByClassName("hello");
-console.log(hellos);
-console.log(hellos[0].textContent);
+// const hellos = document.getElementsByClassName("hello");
+// console.log(hellos);
+// console.log(hellos[0].textContent);
+
+// const title = document.getElementsByTagName("h1");
+// console.log(title);
+// console.log(title[0].textContent); 
+
+// const title1 = document.querySelectorAll("body .hello h1");
+// const title2 = document.querySelector("div .sang1");
+// const title3 = document.querySelectorAll(".hello .sang");
+
+// console.log(title1[0]);
+// console.log(title2);
+// console.log(title3);
+// console.dir(title2);
+// title2.style.color="blue";
+
+const title1 = document.querySelector("div.hello:first-child h1");
+
+
+function handleTitleClick(){
+    if (title1.style.color === "red"){
+        title1.style.color = "black";
+    }
+    else title1.style.color = "red";
+}
+
+function handleMouseEnter(){
+    title1.innerText = "Mouse is here!";
+}
+
+function handleMouseLeave(){
+    title1.innerText = "Mouse is gone!";
+}
+
+function handleWindowResize(){
+    document.body.style.backgroundColor = "tomato";
+}
+
+function handleWindowCopy(){
+    alert("copier");
+}
+
+function handleWindowOffline(){
+    alert("SOS no WIFI");
+}
+
+title1.addEventListener("click", handleTitleClick);
+//title1.onclick = handleTitleClick;
+title1.addEventListener("mouseenter", handleMouseEnter);
+title1.addEventListener("mouseleave", handleMouseLeave);
+//title1.addEventListener("copy", handleWindowCopy);
+
+window.onresize = handleWindowResize;
+window.oncopy = handleWindowCopy;
+window.onoffline = handleWindowOffline;
