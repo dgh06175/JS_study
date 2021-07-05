@@ -96,42 +96,71 @@
 // console.dir(title2);
 // title2.style.color="blue";
 
-const title1 = document.querySelector("div.hello:first-child h1");
+// const title1 = document.querySelector("div.hello:first-child h1");
 
 
-function handleTitleClick(){
-    if (title1.style.color === "red"){
-        title1.style.color = "black";
-    }
-    else title1.style.color = "red";
+// function handleTitleClick(){
+//     if (title1.style.color === "red"){
+//         title1.style.color = "black";
+//     }
+//     else title1.style.color = "red";
+// }
+
+// function handleMouseEnter(){
+//     title1.innerText = "Mouse is here!";
+// }
+
+// function handleMouseLeave(){
+//     title1.innerText = "Mouse is gone!";
+// }
+
+// function handleWindowResize(){
+//     document.body.style.backgroundColor = "tomato";
+// }
+
+// function handleWindowCopy(){
+//     alert("copier");
+// }
+
+// function handleWindowOffline(){
+//     alert("SOS no WIFI");
+// }
+
+// title1.addEventListener("click", handleTitleClick);
+// //title1.onclick = handleTitleClick;
+// title1.addEventListener("mouseenter", handleMouseEnter);
+// title1.addEventListener("mouseleave", handleMouseLeave);
+// //title1.addEventListener("copy", handleWindowCopy);
+
+// window.onresize = handleWindowResize;
+// window.oncopy = handleWindowCopy;
+// window.onoffline = handleWindowOffline;
+
+const h1 = document.querySelector("div h1");
+
+function handleTitleClick() {
+    // const currentColor = h1.style.color;
+    // let newColor;
+    // if (currentColor === "blue") {
+    //     newColor = "tomato";
+    // } else {
+    //     newColor = "blue";
+    // }
+    // h1.style.color = newColor;
+
+    // if(h1.className === "active"){
+    //     h1.className = "";
+    // } else{
+    //     h1.className = "active";
+    // }
+
+    //const clickedClass = "active";
+    // if(h1.classList.contains(clickedClass)){
+    //     h1.classList.remove(clickedClass);
+    // } else {
+    //     h1.classList.add(clickedClass);
+    // }
+
+    h1.classList.toggle("active");
 }
-
-function handleMouseEnter(){
-    title1.innerText = "Mouse is here!";
-}
-
-function handleMouseLeave(){
-    title1.innerText = "Mouse is gone!";
-}
-
-function handleWindowResize(){
-    document.body.style.backgroundColor = "tomato";
-}
-
-function handleWindowCopy(){
-    alert("copier");
-}
-
-function handleWindowOffline(){
-    alert("SOS no WIFI");
-}
-
-title1.addEventListener("click", handleTitleClick);
-//title1.onclick = handleTitleClick;
-title1.addEventListener("mouseenter", handleMouseEnter);
-title1.addEventListener("mouseleave", handleMouseLeave);
-//title1.addEventListener("copy", handleWindowCopy);
-
-window.onresize = handleWindowResize;
-window.oncopy = handleWindowCopy;
-window.onoffline = handleWindowOffline;
+h1.addEventListener("click", handleTitleClick);
