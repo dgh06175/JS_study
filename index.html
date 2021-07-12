@@ -10,8 +10,9 @@
 </head>
 
 <body>
+    <h2 id="clock">00:00</h2>
     <form id="login-form" class="hidden">
-        <h1 style="width: 100px; margin:0px"></h1>
+        <h1 style="width: 100px; margin:0px;"></h1>
         <input id="hi"
         required maxlength="15"
         type="text"
@@ -20,13 +21,27 @@
         <input type="submit" value="Log in!!">
     </form>
     <h1 id="greeting" class="hidden"></h1>
-    <h2 id="clock">00:00</h2>
+    <form id="todo-form">
+        <input id="todo_input" type="text" placeholder="Write a To Do and Press Enter" required/>
+    </form>
+    <ul id="todo-list">
+        <!-- <li>
+            <span>text</span>
+            <button>X</button>
+        </li> -->
+    </ul>
     <div id="quote">
         <span></span>
         <span></span>
     </div>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+    <script src="app.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/todo.js"></script>
     <script src="js/quotes.js"></script>
-    <script src="js/greeting.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/background.js"></script>
 </body>
