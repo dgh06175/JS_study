@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>상현문제</title>
+    <style>
+      #grid {
+        border: 5px inset black;
+        display: grid;
+        grid-template-columns: 100px 1fr;
+      }
+      div div div {
+        margin: 5px;
+        border-bottom: 2px solid red;
+      }
+      .name div {
+        background-color: bisque;
+      }
+      .location div {
+        background-color: aquamarine;
+      }
+    </style>
+  </head>
+  <body>
+    <div>- 충북대학교 기숙사 -</div>
+    <div id="grid">
+      <div class="name">
+        <div>양진재</div>
+        <div>개성재</div>
+        <div>양성재</div>
+      </div>
+      <div class="location">
+        <div>후문</div>
+        <div>중문</div>
+        <div>서문</div>
+      </div>
+    </div>
+  </body>
+</html>
