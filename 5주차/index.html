@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>OTT</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      h1 {
+        background-color: aqua;
+      }
+      #active {
+        color: red;
+      }
+      .saw {
+        color: gray;
+      }
+      a {
+        color: black;
+        text-decoration: none;
+      }
+      h1 {
+        font-size: 45px;
+        text-align: center;
+        border-bottom: 2px inset gray;
+        margin: 0px;
+        padding: 10px;
+      }
+      ol {
+        border-right: 1px solid gray;
+        width: 100px;
+        height: 100px;
+        margin-top: 0px;
+        padding: 20px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: 150px 1fr;
+      }
+      @media (max-width: 800px) {
+        #grid {
+          display: block;
+          grid-template-columns: 150px 1fr;
+        }
+        ol {
+          border-right: none;
+        }
+        h1 {
+          border-bottom: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <a href="index.html"><h1>OTT</h1></a>
+    <div id="grid">
+      <div>
+        <ol>
+          <li><a href="youtube.html" class="saw">YouTube</a></li>
+          <li><a href="netflix.html" class="saw" id="active">NetFlix</a></li>
+          <li><a href="watcha.html">WatCha</a></li>
+        </ol>
+      </div>
+      <div style="padding: 20px">
+        <h2 style="margin: 0">HTML</h2>
+        <p>
+          asdas djasjdksajkdksad kasjdjasjdk lasjkdjsakdjkals jdkjsakldj
+          ksajkdjksa jdklasjlkdj asljdkajkdjkas jdksajdkasj kdlakdj lakjdka
+          jlkdjak
+        </p>
+      </div>
+    </div>
+  </body>
+</html>
