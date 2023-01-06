@@ -2,33 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-  </head>
-  <body>
-    Hello WOrld
-    <button
-      onclick="
-	textBigger()
-	"
-    >
-      플러스
-    </button>
-    <button
-      onclick="
-	document.querySelector('body').style.fontSize += 10;
-	"
-    >
-      마이너스
-    </button>
     <script>
-      document.querySelector('body').style.fontSize = 10;
-      function textBigger() {
-        textSize = document.querySelector('body').style.fontSize;
-        console.log(textSize);
-        document.querySelector('body').style.fontSize = textSize + 10;
+      var userFontSize = 15;
+      function reSize(n) {
+        userFontSize += n;
+        document.getElementById('textArea').style.fontSize =
+          userFontSize + 'px';
       }
     </script>
+  </head>
+  <body>
+    <input type="button" value="플러스" onclick="reSize(1)" />
+    <input type="button" value="마이너스" onclick="reSize(-1)" />
+    <div id="textArea" style="font-size: 15px">Hello World!</div>
   </body>
 </html>

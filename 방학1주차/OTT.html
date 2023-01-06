@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>OTT</title>
+    <link rel="stylesheet" href="OTT_style.css" />
+  </head>
+  <body>
+    <a href="index.html"><h1>OTT</h1></a>
+
+    <div id="grid">
+      <div>
+        <ol>
+          <li><a href="youtube.html" class="saw">YouTube</a></li>
+          <li><a href="netflix.html" class="saw" id="active">NetFlix</a></li>
+          <li><a href="watcha.html">WatCha</a></li>
+        </ol>
+      </div>
+      <div style="padding: 20px">
+        <h2 style="margin: 0">HTML</h2>
+        <p>
+          asdas djasjdksajkdksad kasjdjasjdk lasjkdjsakdjkals jdkjsakldj
+          ksajkdjksa jdklasjlkdj asljdkajkdjkas jdksajdkasj kdlakdj lakjdka
+          jlkdjak
+        </p>
+      </div>
+    </div>
+    <input
+      type="button"
+      value="Night"
+      onclick="
+    document.querySelector('body').style.backgroundColor = 'black';
+    document.querySelector('body').style.color = 'white';"
+    />
+    <input
+      type="button"
+      value="Day"
+      onclick="
+    document.querySelector('body').style.backgroundColor = 'white';
+    document.querySelector('body').style.color = 'black';"
+    />
+  </body>
+</html>
