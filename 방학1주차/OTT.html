@@ -6,6 +6,20 @@
     <link rel="stylesheet" href="OTT_style.css" />
   </head>
   <body>
+    <script>
+      function toggle_night_mode(my_tag) {
+        let target = document.querySelector('body').style;
+        if (my_tag.value === 'night') {
+          target.backgroundColor = 'black';
+          target.color = 'white';
+          my_tag.value = 'day';
+        } else {
+          target.backgroundColor = 'white';
+          target.color = 'black';
+          my_tag.value = 'night';
+        }
+      }
+    </script>
     <a href="index.html"><h1>OTT</h1></a>
 
     <div id="grid">
@@ -13,7 +27,7 @@
         <ol>
           <li><a href="youtube.html" class="saw">YouTube</a></li>
           <li><a href="netflix.html" class="saw" id="active">NetFlix</a></li>
-          <li><a href="watcha.html">WatCha</a></li>
+          <li><a href="watcha.html" class="saw">WatCha</a></li>
         </ol>
       </div>
       <div style="padding: 20px">
@@ -26,18 +40,11 @@
       </div>
     </div>
     <input
+      id="night_mode"
       type="button"
-      value="Night"
-      onclick="
-    document.querySelector('body').style.backgroundColor = 'black';
-    document.querySelector('body').style.color = 'white';"
-    />
-    <input
-      type="button"
-      value="Day"
-      onclick="
-    document.querySelector('body').style.backgroundColor = 'white';
-    document.querySelector('body').style.color = 'black';"
+      value="night"
+      onclick="toggle_night_mode(this)"
+      style="margin: 10px"
     />
   </body>
 </html>
