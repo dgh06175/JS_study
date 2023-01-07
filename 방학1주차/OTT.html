@@ -8,14 +8,21 @@
   <body>
     <script>
       function toggle_night_mode(my_tag) {
-        let target = document.querySelector('body').style;
+        let body_style = document.querySelector('body').style;
+        let link_style = document.querySelectorAll('.saw');
         if (my_tag.value === 'night') {
-          target.backgroundColor = 'black';
-          target.color = 'white';
+          for (let i = 0; i < link_style.length; i++) {
+            link_style[i].style.color = 'lightblue';
+          }
+          body_style.backgroundColor = 'black';
+          body_style.color = 'white';
           my_tag.value = 'day';
         } else {
-          target.backgroundColor = 'white';
-          target.color = 'black';
+          for (let i = 0; i < link_style.length; i++) {
+            link_style[i].style.color = 'blue';
+          }
+          body_style.backgroundColor = 'white';
+          body_style.color = 'black';
           my_tag.value = 'night';
         }
       }
@@ -39,6 +46,14 @@
         </p>
       </div>
     </div>
+    <script>
+      document.write('<ul>');
+      ary = ['LEE', 'HWANG', 'KIM'];
+      for (let i = 0; i < ary.length; i++) {
+        document.write('<li>' + ary[i] + '</li>');
+      }
+      document.write('</ul>');
+    </script>
     <input
       id="night_mode"
       type="button"
