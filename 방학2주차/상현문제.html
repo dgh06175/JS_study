@@ -10,8 +10,9 @@
         let color_code =
           '#' + Math.round(Math.random() * 0xffffff).toString(16);
         document.querySelector('body').style.backgroundColor = color_code;
-        // Math.round : 반올림
-        // Math.random : 0~1사이 랜덤값 반환
+        // Math.round() : 반올림
+        // 0xffffff : 색상코드의 최댓값(하얀색)
+        // Math.random() : 0~1사이 랜덤값 반환
         // toString(16) : 16진수의 문자열로 만들어줌
       }
     </script>
