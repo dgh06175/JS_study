@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>태민문제</title>
+    <script>
+      const person = {
+        firstname: '상현',
+        lastname: '이',
+        name: function () {
+          return this.lastname + this.firstname;
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <script></script>
+    <h1>JavaScript Objects</h1>
+    <div id="demo"></div>
+    <script>
+      document.getElementById('demo').innerHTML =
+        'My friend is ' + person.name();
+    </script>
+  </body>
+</html>
