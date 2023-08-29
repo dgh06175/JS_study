@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let input = parseInt(prompt('자연수를 입력하세요(1~100)'));
+      for (let i = 2; input <= 100; i += 1) {
+        document.write(input + '<br>');
+        input *= i;
+      }
+    </script>
+  </body>
+</html>

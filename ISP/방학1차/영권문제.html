@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Document</title>
+    <script>
+      var userFontSize = 15;
+      function reSize(n) {
+        userFontSize += n;
+        document.getElementById('textArea').style.fontSize =
+          userFontSize + 'px';
+      }
+    </script>
+  </head>
+  <body>
+    <input type="button" value="플러스" onclick="reSize(1)" />
+    <input type="button" value="마이너스" onclick="reSize(-1)" />
+    <div id="textArea" style="font-size: 15px">Hello World!</div>
+  </body>
+</html>

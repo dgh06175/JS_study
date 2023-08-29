@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      div {
+        font-size: 30px;
+        text-align: center;
+      }
+      ul {
+        text-align: center;
+        width: 100%;
+        display: table;
+        background-color: blue;
+      }
+      li {
+        display: inline;
+        background-color: blue;
+        margin-right: 20px;
+      }
+      @media (max-width: 1000px) {
+        div {
+          font-size: 50px;
+          text-align: left;
+        }
+        ul {
+          text-align: center;
+          width: 20%;
+          background-color: blue;
+        }
+        li {
+          display: block;
+          background-color: blue;
+          margin-right: 20px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div>MediaQuery</div>
+    <ul>
+      <li>html</li>
+      <li>css</li>
+      <li>java</li>
+      <li>C</li>
+      <li>python</li>
+    </ul>
+  </body>
+</html>

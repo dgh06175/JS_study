@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>상현제출</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      $(function () {
+        $('#naver').click(function () {
+          if (confirm('네이버로 이동합니다.')) {
+            location.href = 'https://www.naver.com';
+          }
+        });
+      });
+      $(function () {
+        $('#google').click(function () {
+          location.href = 'https://www.google.com';
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <div id="naver">네이버로</div>
+    <br />
+    <div id="google">구글로</div>
+  </body>
+</html>

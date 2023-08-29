@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>영권문제</title>
+  </head>
+  <style>
+    button {
+      height: 50px;
+      width: 50px;
+      background-color: gray;
+      margin: 10px;
+    }
+  </style>
+  <body>
+    <script>
+      let result = 0;
+      let a = 0;
+      let b = 0;
+      let sign = '';
+      $('#1').on('click', function () {
+        if (a !== 0) a = 1;
+        else b = 1;
+      });
+      $('#2').on('click', function () {
+        if (a !== 0) a = 2;
+        else b = 2;
+      });
+      $('#3').on('click', function () {
+        if (a !== 0) a = 3;
+        else b = 3;
+      });
+      $('#4').on('click', function () {
+        if (a !== 0) a = 4;
+        else b = 4;
+      });
+      $('#5').on('click', function () {
+        if (a !== 0) a = 5;
+        else b = 5;
+      });
+      $('#6').on('click', function () {
+        if (a !== 0) a = 6;
+        else b = 6;
+      });
+      $('#7').on('click', function () {
+        if (a !== 0) a = 7;
+        else b = 7;
+      });
+      $('#8').on('click', function () {
+        if (a !== 0) a = 8;
+        else b = 8;
+      });
+      $('#9').on('click', function () {
+        if (a !== 0) a = 9;
+        else b = 9;
+      });
+      $('#+').on('click', function () {
+        sign = '+';
+      });
+      $('#-').on('click', function () {
+        sign = '-';
+      });
+      $('#*').on('click', function () {
+        sign = '*';
+      });
+      $('#/').on('click', function () {
+        sign = '/';
+      });
+      $('#enter').on('click', function () {
+        document.getElementById('result').value = a + b;
+      });
+    </script>
+    <button id="1">1</button>
+    <button id="2">2</button>
+    <button id="3">3</button>
+    <br />
+    <button id="4">4</button>
+    <button id="5">5</button>
+    <button id="6">6</button>
+    <br />
+
+    <button id="7">7</button>
+    <button id="8">8</button>
+    <button id="9">9</button>
+    <br />
+
+    <button id="+">+</button>
+    <button id="-">-</button>
+    <button id="*">*</button>
+    <button id="/">/</button>
+    <br />
+    <button id="enter">결과</button>
+
+    <input id="result" type="text" value="0" />
+  </body>
+</html>

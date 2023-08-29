@@ -1,0 +1,152 @@
+body {
+  display: flex;
+  width: 100%;
+  height: 1000px;
+}
+div {
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  font-size: 100px;
+}
+@media (max-height: 100px) {
+  div {
+    background-color: red;
+  }
+  #o,
+  #y,
+  #g,
+  #b,
+  #d,
+  #p,
+  #otherwise {
+    display: none;
+  }
+  #r {
+    color: white;
+    font-size: 50vh;
+  }
+}
+@media (min-height: 100px) and (max-height: 200px) {
+  div {
+    background-color: orange;
+  }
+  #r,
+  #y,
+  #g,
+  #b,
+  #d,
+  #p,
+  #otherwise {
+    display: none;
+  }
+  #o {
+    color: white;
+    font-size: 50vh;
+  }
+}
+@media (min-height: 200px) and (max-height: 300px) {
+  div {
+    background-color: yellow;
+  }
+  #r,
+  #o,
+  #g,
+  #b,
+  #d,
+  #p,
+  #otherwise {
+    display: none;
+  }
+  #y {
+    font-size: 50vh;
+  }
+}
+@media (min-height: 300px) and (max-height: 400px) {
+  div {
+    background-color: green;
+  }
+  #r,
+  #o,
+  #y,
+  #b,
+  #d,
+  #p,
+  #otherwise {
+    display: none;
+  }
+  #g {
+    font-size: 200px;
+    font-size: 50vh;
+  }
+}
+@media (min-height: 400px) and (max-height: 500px) {
+  div {
+    background-color: blue;
+  }
+  #r,
+  #o,
+  #y,
+  #g,
+  #d,
+  #p,
+  #otherwise {
+    display: none;
+  }
+  #b {
+    color: white;
+    font-size: 290px;
+    font-size: 50vh;
+  }
+}
+@media (min-height: 500px) and (max-height: 600px) {
+  div {
+    background-color: rgb(3, 3, 95);
+  }
+  #r,
+  #o,
+  #y,
+  #g,
+  #b,
+  #p,
+  #otherwise {
+    display: none;
+  }
+  #d {
+    color: white;
+    font-size: 200px;
+    font-size: 50vh;
+  }
+}
+@media (min-height: 600px) and (max-height: 700px) {
+  div {
+    background-color: purple;
+  }
+  #r,
+  #o,
+  #y,
+  #g,
+  #b,
+  #d,
+  #otherwise {
+    display: none;
+  }
+  #p {
+    color: white;
+    font-size: 300px;
+    font-size: 50vh;
+  }
+}
+@media (min-height: 700px) {
+  #r,
+  #o,
+  #y,
+  #g,
+  #b,
+  #d,
+  #p {
+    display: none;
+    font-size: 50vh;
+  }
+}

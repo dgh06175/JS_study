@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>OTT</title>
+    <link rel="stylesheet" href="OTT_style.css" />
+  </head>
+  <body>
+    <script>
+      function toggle_night_mode(my_tag) {
+        let body_style = document.querySelector('body').style;
+        let link_style = document.querySelectorAll('.saw');
+        if (my_tag.value === 'night') {
+          for (let i = 0; i < link_style.length; i++) {
+            link_style[i].style.color = 'lightblue';
+          }
+          body_style.backgroundColor = 'black';
+          body_style.color = 'white';
+          my_tag.value = 'day';
+        } else {
+          for (let i = 0; i < link_style.length; i++) {
+            link_style[i].style.color = 'blue';
+          }
+          body_style.backgroundColor = 'white';
+          body_style.color = 'black';
+          my_tag.value = 'night';
+        }
+      }
+    </script>
+    <a href="index.html"><h1>OTT</h1></a>
+
+    <div id="grid">
+      <div>
+        <ol>
+          <li><a href="youtube.html" class="saw">YouTube</a></li>
+          <li><a href="netflix.html" class="saw" id="active">NetFlix</a></li>
+          <li><a href="watcha.html" class="saw">WatCha</a></li>
+        </ol>
+      </div>
+      <div style="padding: 20px">
+        <h2 style="margin: 0">HTML</h2>
+        <p>
+          asdas djasjdksajkdksad kasjdjasjdk lasjkdjsakdjkals jdkjsakldj
+          ksajkdjksa jdklasjlkdj asljdkajkdjkas jdksajdkasj kdlakdj lakjdka
+          jlkdjak
+        </p>
+      </div>
+    </div>
+    <script>
+      document.write('<ul>');
+      ary = ['LEE', 'HWANG', 'KIM'];
+      for (let i = 0; i < ary.length; i++) {
+        document.write('<li>' + ary[i] + '</li>');
+      }
+      document.write('</ul>');
+    </script>
+    <input
+      id="night_mode"
+      type="button"
+      value="night"
+      onclick="toggle_night_mode(this)"
+      style="margin: 10px"
+    />
+  </body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5x5 Grid</title>
+
+    <style>
+      body {
+        margin: 30px;
+      }
+      h1 {
+        font-size: 72px;
+        font-family: sans-serif;
+      }
+      .parent {
+        display: grid;
+        grid-gap: 10px;
+        grid-template-columns: repeat(5, 150px);
+        grid-template-rows: repeat(5, 150px);
+      }
+      .parent > div {
+        padding: 10px;
+        background-color: rgb(199, 199, 210);
+        border-radius: 5px;
+        display: grid;
+        place-items: center;
+        font-family: 'Franklin Gothic Medium';
+        font-size: 100px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>A 5x5 Grid</h1>
+    <div class="parent">
+      <div>1</div>
+      <div>2</div>
+      <div>3</div>
+      <div>4</div>
+      <div>5</div>
+      <div>6</div>
+      <div>7</div>
+      <div>8</div>
+      <div>9</div>
+      <div>10</div>
+      <div>11</div>
+      <div>12</div>
+      <div>13</div>
+      <div>14</div>
+      <div>15</div>
+      <div>16</div>
+      <div>17</div>
+      <div>18</div>
+      <div>19</div>
+      <div>20</div>
+      <div>21</div>
+      <div>22</div>
+      <div>23</div>
+      <div>24</div>
+      <div>25</div>
+    </div>
+  </body>
+</html>

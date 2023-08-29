@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title>Document</title>
+    <script>
+      $(function () {
+        $('#changeColor').click(function () {
+          let color_code =
+            '#' + Math.round(Math.random() * 0xffffff).toString(16);
+          $('body').css('backgroundColor', color_code);
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>랜덤 배경색 변경</h1>
+    <input type="button" value="색 바꾸기" id="changeColor" />
+  </body>
+</html
